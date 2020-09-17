@@ -13,6 +13,7 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import matplotlib.pyplot as plot
 import numpy as np
 
+#https://www.cc.gatech.edu/classes/AY2015/cs2316_fall/codesamples/rosenbrock_demo.py
 fig = plot.figure()
 ax = fig.gca(projection='3d')
 
@@ -35,5 +36,7 @@ ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
 fig.colorbar(surf, shrink=0.5, aspect=5)
 
+
+#lesson 1
 sol=minimize(rosen,np.zeros(2,), method='Nelder-Mead')
 
